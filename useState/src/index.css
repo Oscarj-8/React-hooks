@@ -12,14 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  padding: 0 !important;
 }
 
-body {
-  margin: 0;
+.wrapper {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+ 
 }
 
 h1 {
@@ -88,4 +89,27 @@ li {
   list-style: none;
   gap: 5px;
   flex-direction: column;
+}
+
+
+.items {
+  position: fixed;
+  display: flex;
+  place-content: center;
+  gap: 4em;
+  top: 0;
+  padding: 1em;
+  background-color: #f9f9f9 ;
+  width: 100vw;
+}
+
+.item {
+  text-decoration: none;
+  color:#646cff;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.item:focus {
+text-shadow: 1px 1px 10px #646cff;
 }

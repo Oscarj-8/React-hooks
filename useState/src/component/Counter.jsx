@@ -5,7 +5,7 @@ function Counter() {
   const [count, setCounter] = useState(initValue);
   return (
     <div>
-      <h1>Counter {count}</h1>
+      <h1 className="obj">Counter {count}</h1>
       <p>
         <i>
           This counter's state is managed by using a react hook called useState
