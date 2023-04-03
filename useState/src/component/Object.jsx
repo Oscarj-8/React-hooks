@@ -5,7 +5,7 @@ function Object() {
     
   return (
     <div>
-        <h1>Object</h1>
+        <h1 className="obj">Object</h1>
         <div className="inpts">
              <input type='text' value={name.firstName} onChange={e => setName({...name ,firstName: e.target.value})} />
              <input type='text' value={name.lastName} onChange={e => setName({...name ,lastName: e.target.value})} />

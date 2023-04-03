@@ -75,4 +75,17 @@ input:focus{
 
 li {
   color: white;
+} 
+
+.obj {
+  text-shadow: 3px 3px 57px #646cff;
+}
+
+/*array*/
+
+.arrList {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  flex-direction: column;
 }
