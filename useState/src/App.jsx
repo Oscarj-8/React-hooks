@@ -2,13 +2,18 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let initValue = 0;
+  const [count, setCount] = useState(initValue)
   return (
     <>
-    <h2>
+    <h1>
       Counter {count}
-    </h2>
-    <button onClick={() => setCount(count + 1)}>Count</button>
+    </h1>
+    <p><i>This counter's state is managed by using a react hook called useState hook, which allows us to initialize default/inital value and then takes another argument as a setter function, which used for altering the state based up on some kind of event.</i></p>
+    <button onClick={() => setCount(count + 1)}>Increment</button>
+    <button onClick={() => setCount(count - 1)}>Decrement</button>
+    <button onClick={() => setCount(initValue)}>Reset</button>
+
     </>
   )
 }
