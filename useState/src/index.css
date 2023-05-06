@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 
 h1 {
@@ -29,8 +28,8 @@ h1 {
 }
 
 p {
-font-size: 1.2em;
-line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 button {
@@ -64,19 +63,18 @@ button:focus {
 
 input {
   outline: none;
-    border: none;
-    padding: 10px;
-    margin: 5px;
+  border: none;
+  padding: 10px;
+  margin: 5px;
 }
 
-input:focus{
-  box-shadow:2px 3px 8px  #646cff;
- 
+input:focus {
+  box-shadow: 2px 3px 8px #646cff;
 }
 
 li {
   color: white;
-} 
+}
 
 .obj {
   text-shadow: 3px 3px 57px #646cff;
@@ -91,7 +89,6 @@ li {
   flex-direction: column;
 }
 
-
 .items {
   position: fixed;
   display: flex;
@@ -99,17 +96,17 @@ li {
   gap: 4em;
   top: 0;
   padding: 1em;
-  background-color: #f9f9f9 ;
+  background-color: #f9f9f9;
   width: 100vw;
 }
 
 .item {
   text-decoration: none;
-  color:#646cff;
+  color: #646cff;
   font-size: 1.3em;
   font-weight: 700;
 }
 
 .item:focus {
-text-shadow: 1px 1px 10px #646cff;
+  text-shadow: 1px 1px 10px #646cff;
 }
