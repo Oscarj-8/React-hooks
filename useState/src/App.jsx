@@ -3,6 +3,7 @@ import Counter from "./component/Counter";
 import Object from "./component/Object";
 import Array from "./component/Array";
 import Input from "./component/Input";
+import Toggle from "./component/Toggle";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
         <Link to="/Input" className="item">
           Inputs
         </Link>
+        <Link to="/Toggle" className="item">
+          Toggle
+        </Link>
       </nav>
 
       <Routes>
@@ -28,6 +32,7 @@ function App() {
         <Route path="/Object" element={<Object />} />
         <Route path="/Array" element={<Array />} />
         <Route path="/Input" element={<Input />} />
+        <Route path="/Toggle" element={<Toggle />} />
       </Routes>
     </div>
   );

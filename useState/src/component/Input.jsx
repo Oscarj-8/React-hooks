@@ -7,7 +7,7 @@ function Input() {
   }
   return (
     <div>
-      <h1>Controlled Components</h1>
+      <h1 className="obj">Controlled Components</h1>
       <input type="text" value={text} onChange={handler} />
       <p>Input text: {text}</p>
     </div>
