@@ -6,6 +6,7 @@ import Input from "./component/Input";
 import Toggle from "./component/Toggle";
 import { Routes, Route, Link } from "react-router-dom";
 import CounterTwo from "./component/CounterTwo";
+import Switch from "./component/Switch";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <Link to="/CounterTwo" className="item">
           Counter 2
         </Link>
+        <Link to="/Switch" className="item">
+          Switch
+        </Link>
       </nav>
 
       <Routes>
@@ -38,6 +42,7 @@ function App() {
         <Route path="/Input" element={<Input />} />
         <Route path="/Toggle" element={<Toggle />} />
         <Route path="/CounterTwo" element={<CounterTwo />} />
+        <Route path="/Switch" element={<Switch />} />
       </Routes>
     </div>
   );
