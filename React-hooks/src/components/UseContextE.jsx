@@ -1,4 +1,4 @@
-import { UserContext, UserContextTwo } from "../App";
+import { UserContext, UserPlayer, UserStadium } from "../App";
 
 function UseContextE() {
   return (
@@ -6,15 +6,22 @@ function UseContextE() {
       <UserContext.Consumer>
         {(user) => {
           return (
-            <UserContextTwo.Consumer>
-              {(usertwo) => {
+            <UserPlayer.Consumer>
+              {(player) => {
                 return (
-                  <div>
-                    User context one {user}, User context two {usertwo}
-                  </div>
+                  <UserStadium.Consumer>
+                    {(stadium) => {
+                      return (
+                        <div>
+                          The best club is {user}, and the best ever player is
+                          {player}, and finally the best stadium is {stadium}
+                        </div>
+                      );
+                    }}
+                  </UserStadium.Consumer>
                 );
               }}
-            </UserContextTwo.Consumer>
+            </UserPlayer.Consumer>
           );
         }}
       </UserContext.Consumer>

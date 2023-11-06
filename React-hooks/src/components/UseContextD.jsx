@@ -1,14 +1,18 @@
-import { useContext } from "react";
-import { UserContext, UserContextTwo } from "../App";
 import UseContextE from "./UseContextE";
+import { UserContext, UserPlayer } from "../App";
+import { useContext } from "react";
 
 function UseContextD() {
-  const UserOne = useContext(UserContext);
-  const Usertwo = useContext(UserContextTwo);
+  const User = useContext(UserContext);
+  const Player = useContext(UserPlayer);
 
   return (
     <div>
-      {UserOne} - {Usertwo}
+      <UseContextE />
+      <div>
+        <h2>This is use context</h2>
+        {User} and {Player}
+      </div>
     </div>
   );
 }
