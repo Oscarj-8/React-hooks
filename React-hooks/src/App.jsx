@@ -3,6 +3,7 @@ import "./App.css";
 import UseEffect from "./components/UseEffect";
 import UseContextC from "./components/UseContextC";
 import UseReducer from "./components/UseReducer";
+import UseReducerObj from "./components/UseReducerObj";
 
 export const UserContext = React.createContext();
 export const UserPlayer = React.createContext();
@@ -20,6 +21,7 @@ function App() {
         </UserPlayer.Provider>
       </UserContext.Provider>
       <UseReducer />
+      <UseReducerObj />
     </>
   );
 }
